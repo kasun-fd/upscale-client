@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root{
+  --first-color: #E3F8FF;
+  --second-color: #DCFAFB;
+  --third-color: #FFE8DF;
+  --accent-color: #FF5151;
+  --dark-color: #161616;
+}
+
+/*Tipografia responsive*/
+:root{
+  --body-font: 'Open Sans';
+  --h1-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+}

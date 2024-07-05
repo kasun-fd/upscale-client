@@ -1,0 +1,26 @@
+<div class="container" style="margin-top: 50px; margin-bottom: 50px">
+  <h1>Products</h1>
+  <hr>
+  <div class="row mb-3">
+    <form [formGroup]="searchForm" class="col-6">
+      <input type="search" formControlName="text" class="form-control" id="" name="" placeholder="Search here...">
+    </form>
+  </div>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 col-lg-4 mb-3" *ngFor="let tempData of allProducts">
+      <app-product-element [data]="tempData"></app-product-element>
+    </div>
+  </div>
+  <div class="row">
+    <mat-paginator
+      [length]="count"
+      [pageIndex]="page"
+      [pageSize]="size"
+      [pageSizeOptions]="[1,10,100]"
+      (page)="getServerData($event)"
+    >
+
+    </mat-paginator>
+  </div>
+</div>
+
